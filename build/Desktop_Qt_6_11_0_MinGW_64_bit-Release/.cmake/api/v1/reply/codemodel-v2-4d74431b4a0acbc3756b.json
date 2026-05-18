@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-9f45cef1f8e142e5d29f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "LLK",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "LLK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LLK-Release-6548d6d84bd759b1d659.json",
+					"name" : "LLK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LLK_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LLK_autogen-Release-129d41a3f43fa8c23761.json",
+					"name" : "LLK_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LLK_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LLK_autogen_timestamp_deps-Release-7b6d6470d4f707a0401c.json",
+					"name" : "LLK_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/OneDrive/Documents/LLK/build/Desktop_Qt_6_11_0_MinGW_64_bit-Release",
+		"source" : "D:/OneDrive/Documents/LLK"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

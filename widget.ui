@@ -1,0 +1,983 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>481</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>18</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>90</y>
+         <width>500</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Microsoft YaHei</family>
+         <pointsize>-1</pointsize>
+         <italic>true</italic>
+         <bold>true</bold>
+         <kerning>false</kerning>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    /* 底板：非常高级的深灰色半透明遮罩，不会完全挡住背后的看海士兵 */
+    background-color: rgba(20, 22, 25, 180);
+    
+    /* 字体：使用 CS2 经典的亮黄 */
+    color: #EAA112; 
+    font-family: &quot;Microsoft YaHei&quot;, sans-serif;
+    font-size: 36px; /* 标题必须要大！ */
+    font-weight: bold;
+    font-style: italic; /* 倾斜字体更有冲刺和枪战的动感 */
+    letter-spacing: 6px; /* 字间距拉大，霸气外露 */
+    
+    /* 边框：上下加上极细的高光线，非常有科幻感 */
+    border-top: 2px solid #EAA112;
+    border-bottom: 2px solid rgba(255, 255, 255, 30);
+    
+    /* 圆角和内边距 */
+    border-radius: 8px;
+    padding: 10px 40px; /* 左右稍微留白，做成一个长条形的横幅效果 */
+}</string>
+       </property>
+       <property name="text">
+        <string>CS2:Major传奇荟萃</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>540</x>
+         <y>340</y>
+         <width>131</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QPushButton" name="pushButton_4">
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>-1</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">/* ================= 常态（默认样子） ================= */
+QPushButton {
+    background-color: rgba(30, 32, 36, 180); /* 深色枪灰色，带一点透明度透出背景 */
+    color: #FFFFFF; /* 纯白字体 */
+    border: 2px solid rgba(255, 255, 255, 30); /* 极淡的白色边框，增加质感 */
+    border-radius: 4px; /* 微小的圆角，现代感更强 */
+    font-family: &quot;Microsoft YaHei&quot;, sans-serif; /* 干净的无衬线字体 */
+    font-size: 14px; /* 字体大小（根据你的实际按钮大小微调） */
+    font-weight: bold;
+    letter-spacing: 4px; /* 字间距拉宽，显得更高级 */
+}
+
+/* ================= 悬停态（鼠标放上去时） ================= */
+QPushButton:hover {
+    background-color: rgba(45, 48, 54, 220); /* 底色稍微变亮一点 */
+    color: #EAA112; /* 字体变成 CS2 标志性的亮黄色 */
+    border: 2px solid #EAA112; /* 边框亮起警戒黄 */
+}
+
+/* ================= 按下态（鼠标点击时） ================= */
+QPushButton:pressed {
+    background-color: #EAA112; /* 点击瞬间底色变成全黄 */
+    color: #000000; /* 字体变成黑色，形成强烈反差 */
+    border: 2px solid #EAA112;
+    padding-top: 2px; /* 模拟真实的向下按压物理位移 */
+    padding-left: 2px;
+}</string>
+          </property>
+          <property name="text">
+           <string>排行榜</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_5">
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>-1</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">/* ================= 常态（默认样子） ================= */
+QPushButton {
+    background-color: rgba(30, 32, 36, 180); /* 深色枪灰色，带一点透明度透出背景 */
+    color: #FFFFFF; /* 纯白字体 */
+    border: 2px solid rgba(255, 255, 255, 30); /* 极淡的白色边框，增加质感 */
+    border-radius: 4px; /* 微小的圆角，现代感更强 */
+    font-family: &quot;Microsoft YaHei&quot;, sans-serif; /* 干净的无衬线字体 */
+    font-size: 14px; /* 字体大小（根据你的实际按钮大小微调） */
+    font-weight: bold;
+    letter-spacing: 4px; /* 字间距拉宽，显得更高级 */
+}
+
+/* ================= 悬停态（鼠标放上去时） ================= */
+QPushButton:hover {
+    background-color: rgba(45, 48, 54, 220); /* 底色稍微变亮一点 */
+    color: #EAA112; /* 字体变成 CS2 标志性的亮黄色 */
+    border: 2px solid #EAA112; /* 边框亮起警戒黄 */
+}
+
+/* ================= 按下态（鼠标点击时） ================= */
+QPushButton:pressed {
+    background-color: #EAA112; /* 点击瞬间底色变成全黄 */
+    color: #000000; /* 字体变成黑色，形成强烈反差 */
+    border: 2px solid #EAA112;
+    padding-top: 2px; /* 模拟真实的向下按压物理位移 */
+    padding-left: 2px;
+}</string>
+          </property>
+          <property name="text">
+           <string>设置</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_6">
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>-1</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">/* ================= 常态（默认样子） ================= */
+QPushButton {
+    background-color: rgba(30, 32, 36, 180); /* 深色枪灰色，带一点透明度透出背景 */
+    color: #FFFFFF; /* 纯白字体 */
+    border: 2px solid rgba(255, 255, 255, 30); /* 极淡的白色边框，增加质感 */
+    border-radius: 4px; /* 微小的圆角，现代感更强 */
+    font-family: &quot;Microsoft YaHei&quot;, sans-serif; /* 干净的无衬线字体 */
+    font-size: 14px; /* 字体大小（根据你的实际按钮大小微调） */
+    font-weight: bold;
+    letter-spacing: 4px; /* 字间距拉宽，显得更高级 */
+}
+
+/* ================= 悬停态（鼠标放上去时） ================= */
+QPushButton:hover {
+    background-color: rgba(45, 48, 54, 220); /* 底色稍微变亮一点 */
+    color: #EAA112; /* 字体变成 CS2 标志性的亮黄色 */
+    border: 2px solid #EAA112; /* 边框亮起警戒黄 */
+}
+
+/* ================= 按下态（鼠标点击时） ================= */
+QPushButton:pressed {
+    background-color: #EAA112; /* 点击瞬间底色变成全黄 */
+    color: #000000; /* 字体变成黑色，形成强烈反差 */
+    border: 2px solid #EAA112;
+    padding-top: 2px; /* 模拟真实的向下按压物理位移 */
+    padding-left: 2px;
+}</string>
+          </property>
+          <property name="text">
+           <string>帮助</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>700</width>
+         <height>500</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/picture/1.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnTraditional">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>240</y>
+         <width>150</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Microsoft YaHei</family>
+         <pointsize>-1</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* ================= 常态（默认样子） ================= */
+QPushButton {
+    background-color: rgba(30, 32, 36, 180); /* 深色枪灰色，带一点透明度透出背景 */
+    color: #FFFFFF; /* 纯白字体 */
+    border: 2px solid rgba(255, 255, 255, 30); /* 极淡的白色边框，增加质感 */
+    border-radius: 4px; /* 微小的圆角，现代感更强 */
+    font-family: &quot;Microsoft YaHei&quot;, sans-serif; /* 干净的无衬线字体 */
+    font-size: 18px; /* 字体大小（根据你的实际按钮大小微调） */
+    font-weight: bold;
+    letter-spacing: 4px; /* 字间距拉宽，显得更高级 */
+}
+
+/* ================= 悬停态（鼠标放上去时） ================= */
+QPushButton:hover {
+    background-color: rgba(45, 48, 54, 220); /* 底色稍微变亮一点 */
+    color: #EAA112; /* 字体变成 CS2 标志性的亮黄色 */
+    border: 2px solid #EAA112; /* 边框亮起警戒黄 */
+}
+
+/* ================= 按下态（鼠标点击时） ================= */
+QPushButton:pressed {
+    background-color: #EAA112; /* 点击瞬间底色变成全黄 */
+    color: #000000; /* 字体变成黑色，形成强烈反差 */
+    border: 2px solid #EAA112;
+    padding-top: 2px; /* 模拟真实的向下按压物理位移 */
+    padding-left: 2px;
+}</string>
+       </property>
+       <property name="text">
+        <string>传统模式</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>270</y>
+         <width>150</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Microsoft YaHei</family>
+         <pointsize>-1</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* ================= 常态（默认样子） ================= */
+QPushButton {
+    background-color: rgba(30, 32, 36, 180); /* 深色枪灰色，带一点透明度透出背景 */
+    color: #FFFFFF; /* 纯白字体 */
+    border: 2px solid rgba(255, 255, 255, 30); /* 极淡的白色边框，增加质感 */
+    border-radius: 4px; /* 微小的圆角，现代感更强 */
+    font-family: &quot;Microsoft YaHei&quot;, sans-serif; /* 干净的无衬线字体 */
+    font-size: 18px; /* 字体大小（根据你的实际按钮大小微调） */
+    font-weight: bold;
+    letter-spacing: 4px; /* 字间距拉宽，显得更高级 */
+}
+
+/* ================= 悬停态（鼠标放上去时） ================= */
+QPushButton:hover {
+    background-color: rgba(45, 48, 54, 220); /* 底色稍微变亮一点 */
+    color: #EAA112; /* 字体变成 CS2 标志性的亮黄色 */
+    border: 2px solid #EAA112; /* 边框亮起警戒黄 */
+}
+
+/* ================= 按下态（鼠标点击时） ================= */
+QPushButton:pressed {
+    background-color: #EAA112; /* 点击瞬间底色变成全黄 */
+    color: #000000; /* 字体变成黑色，形成强烈反差 */
+    border: 2px solid #EAA112;
+    padding-top: 2px; /* 模拟真实的向下按压物理位移 */
+    padding-left: 2px;
+}</string>
+       </property>
+       <property name="text">
+        <string>休闲模式</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_7">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>300</y>
+         <width>150</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Microsoft YaHei</family>
+         <pointsize>-1</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* ================= 常态（默认样子） ================= */
+QPushButton {
+    background-color: rgba(30, 32, 36, 180); /* 深色枪灰色，带一点透明度透出背景 */
+    color: #FFFFFF; /* 纯白字体 */
+    border: 2px solid rgba(255, 255, 255, 30); /* 极淡的白色边框，增加质感 */
+    border-radius: 4px; /* 微小的圆角，现代感更强 */
+    font-family: &quot;Microsoft YaHei&quot;, sans-serif; /* 干净的无衬线字体 */
+    font-size: 18px; /* 字体大小（根据你的实际按钮大小微调） */
+    font-weight: bold;
+    letter-spacing: 4px; /* 字间距拉宽，显得更高级 */
+}
+
+/* ================= 悬停态（鼠标放上去时） ================= */
+QPushButton:hover {
+    background-color: rgba(45, 48, 54, 220); /* 底色稍微变亮一点 */
+    color: #EAA112; /* 字体变成 CS2 标志性的亮黄色 */
+    border: 2px solid #EAA112; /* 边框亮起警戒黄 */
+}
+
+/* ================= 按下态（鼠标点击时） ================= */
+QPushButton:pressed {
+    background-color: #EAA112; /* 点击瞬间底色变成全黄 */
+    color: #000000; /* 字体变成黑色，形成强烈反差 */
+    border: 2px solid #EAA112;
+    padding-top: 2px; /* 模拟真实的向下按压物理位移 */
+    padding-left: 2px;
+}</string>
+       </property>
+       <property name="text">
+        <string>关卡模式</string>
+       </property>
+      </widget>
+      <zorder>label_3</zorder>
+      <zorder>label</zorder>
+      <zorder>layoutWidget</zorder>
+      <zorder>btnTraditional</zorder>
+      <zorder>pushButton_3</zorder>
+      <zorder>pushButton_7</zorder>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <widget class="QPushButton" name="pushButton_8">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Microsoft YaHei</family>
+         <pointsize>-1</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* ================= 常态（默认样子） ================= */
+QPushButton {
+    background-color: rgba(30, 32, 36, 180); /* 深色枪灰色，带一点透明度透出背景 */
+    color: #FFFFFF; /* 纯白字体 */
+    border: 2px solid rgba(255, 255, 255, 30); /* 极淡的白色边框，增加质感 */
+    border-radius: 4px; /* 微小的圆角，现代感更强 */
+    font-family: &quot;Microsoft YaHei&quot;, sans-serif; /* 干净的无衬线字体 */
+    font-size: 18px; /* 字体大小（根据你的实际按钮大小微调） */
+    font-weight: bold;
+    letter-spacing: 4px; /* 字间距拉宽，显得更高级 */
+}
+
+/* ================= 悬停态（鼠标放上去时） ================= */
+QPushButton:hover {
+    background-color: rgba(45, 48, 54, 220); /* 底色稍微变亮一点 */
+    color: #EAA112; /* 字体变成 CS2 标志性的亮黄色 */
+    border: 2px solid #EAA112; /* 边框亮起警戒黄 */
+}
+
+/* ================= 按下态（鼠标点击时） ================= */
+QPushButton:pressed {
+    background-color: #EAA112; /* 点击瞬间底色变成全黄 */
+    color: #000000; /* 字体变成黑色，形成强烈反差 */
+    border: 2px solid #EAA112;
+    padding-top: 2px; /* 模拟真实的向下按压物理位移 */
+    padding-left: 2px;
+}</string>
+       </property>
+       <property name="text">
+        <string>打乱</string>
+       </property>
+      </widget>
+      <widget class="QLCDNumber" name="lcd_timer">
+       <property name="geometry">
+        <rect>
+         <x>573</x>
+         <y>52</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLCDNulmber{
+	color:black
+	background-color:rgba(0,0,0,150);
+	border:2px solid #EAA112;
+	border-radius:5px;
+}</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_10">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* ================= 常态（默认样子） ================= */
+QPushButton {
+    background-color: rgba(30, 32, 36, 180); /* 深色枪灰色，带一点透明度透出背景 */
+    color: #FFFFFF; /* 纯白字体 */
+    border: 2px solid rgba(255, 255, 255, 30); /* 极淡的白色边框，增加质感 */
+    border-radius: 4px; /* 微小的圆角，现代感更强 */
+    font-family: &quot;Microsoft YaHei&quot;, sans-serif; /* 干净的无衬线字体 */
+    font-size: 18px; /* 字体大小（根据你的实际按钮大小微调） */
+    font-weight: bold;
+    letter-spacing: 4px; /* 字间距拉宽，显得更高级 */
+}
+
+/* ================= 悬停态（鼠标放上去时） ================= */
+QPushButton:hover {
+    background-color: rgba(45, 48, 54, 220); /* 底色稍微变亮一点 */
+    color: #EAA112; /* 字体变成 CS2 标志性的亮黄色 */
+    border: 2px solid #EAA112; /* 边框亮起警戒黄 */
+}
+
+/* ================= 按下态（鼠标点击时） ================= */
+QPushButton:pressed {
+    background-color: #EAA112; /* 点击瞬间底色变成全黄 */
+    color: #000000; /* 字体变成黑色，形成强烈反差 */
+    border: 2px solid #EAA112;
+    padding-top: 2px; /* 模拟真实的向下按压物理位移 */
+    padding-left: 2px;
+}</string>
+       </property>
+       <property name="text">
+        <string>提示</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_3">
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>10</y>
+         <width>471</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Impact</family>
+         <pointsize>-1</pointsize>
+         <italic>true</italic>
+         <fontweight>Black</fontweight>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    /* 核心特效：中间亮、两边暗的“探照灯”渐变底色，营造高光时刻的舞台感 */
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 0), stop:0.5 rgba(234, 161, 18, 60), stop:1 rgba(0, 0, 0, 0));
+    
+    /* 字体设置：闪耀的冠军金 */
+    color: black; 
+    
+    /* 使用 Impact 这种厚重的海报字体，如果没有会自动降级为雅黑粗体 */
+    font-family: &quot;Impact&quot;, &quot;Microsoft YaHei&quot;, sans-serif;
+    
+    /* 字体必须要巨大！ */
+    font-size: 56px; 
+    font-weight: 900;
+    
+    /* 倾斜字体能带来极强的速度感和力量感 */
+    font-style: italic; 
+    
+    /* 字间距拉开，彰显霸气 */
+    letter-spacing: 8px; 
+    
+    /* 上下留出内边距，防止被框体切断 */
+    padding: 15px 0px; 
+}</string>
+       </property>
+       <property name="text">
+        <string>ACE！团灭</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>300</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Microsoft YaHei</family>
+         <pointsize>-1</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* ================= 常态（默认样子） ================= */
+QPushButton {
+    background-color: rgba(30, 32, 36, 180); /* 深色枪灰色，带一点透明度透出背景 */
+    color: #FFFFFF; /* 纯白字体 */
+    border: 2px solid rgba(255, 255, 255, 30); /* 极淡的白色边框，增加质感 */
+    border-radius: 4px; /* 微小的圆角，现代感更强 */
+    font-family: &quot;Microsoft YaHei&quot;, sans-serif; /* 干净的无衬线字体 */
+    font-size: 18px; /* 字体大小（根据你的实际按钮大小微调） */
+    font-weight: bold;
+    letter-spacing: 4px; /* 字间距拉宽，显得更高级 */
+}
+
+/* ================= 悬停态（鼠标放上去时） ================= */
+QPushButton:hover {
+    background-color: rgba(45, 48, 54, 220); /* 底色稍微变亮一点 */
+    color: #EAA112; /* 字体变成 CS2 标志性的亮黄色 */
+    border: 2px solid #EAA112; /* 边框亮起警戒黄 */
+}
+
+/* ================= 按下态（鼠标点击时） ================= */
+QPushButton:pressed {
+    background-color: #EAA112; /* 点击瞬间底色变成全黄 */
+    color: #000000; /* 字体变成黑色，形成强烈反差 */
+    border: 2px solid #EAA112;
+    padding-top: 2px; /* 模拟真实的向下按压物理位移 */
+    padding-left: 2px;
+}</string>
+       </property>
+       <property name="text">
+        <string>再来一局</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>340</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Microsoft YaHei</family>
+         <pointsize>-1</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* ================= 常态（默认样子） ================= */
+QPushButton {
+    background-color: rgba(30, 32, 36, 180); /* 深色枪灰色，带一点透明度透出背景 */
+    color: #FFFFFF; /* 纯白字体 */
+    border: 2px solid rgba(255, 255, 255, 30); /* 极淡的白色边框，增加质感 */
+    border-radius: 4px; /* 微小的圆角，现代感更强 */
+    font-family: &quot;Microsoft YaHei&quot;, sans-serif; /* 干净的无衬线字体 */
+    font-size: 18px; /* 字体大小（根据你的实际按钮大小微调） */
+    font-weight: bold;
+    letter-spacing: 4px; /* 字间距拉宽，显得更高级 */
+}
+
+/* ================= 悬停态（鼠标放上去时） ================= */
+QPushButton:hover {
+    background-color: rgba(45, 48, 54, 220); /* 底色稍微变亮一点 */
+    color: #EAA112; /* 字体变成 CS2 标志性的亮黄色 */
+    border: 2px solid #EAA112; /* 边框亮起警戒黄 */
+}
+
+/* ================= 按下态（鼠标点击时） ================= */
+QPushButton:pressed {
+    background-color: #EAA112; /* 点击瞬间底色变成全黄 */
+    color: #000000; /* 字体变成黑色，形成强烈反差 */
+    border: 2px solid #EAA112;
+    padding-top: 2px; /* 模拟真实的向下按压物理位移 */
+    padding-left: 2px;
+}</string>
+       </property>
+       <property name="text">
+        <string>返回主页</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_timeCost">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>140</y>
+         <width>341</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    /* 核心亮点：从左到右的半透明渐变底色，左侧微微泛黄，右侧融入黑夜 */
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(234, 161, 18, 60), stop:1 rgba(30, 32, 36, 200));
+    
+    /* 字体设置：纯白高亮，加粗显示 */
+    color: #FFFFFF;
+    font-family: &quot;Microsoft YaHei&quot;, sans-serif;
+    font-size:15px; /* 字体要大，突出成绩 */
+    font-weight: 900; /* 极致加粗 */
+    letter-spacing: 2px; /* 稍微拉开字间距，更显高级 */
+    
+    /* 边框设计：左侧加粗警戒黄高光，其余三边极细半透明白边 */
+    border-left: 6px solid #EAA112; 
+    border-top: 1px solid rgba(255, 255, 255, 20);
+    border-bottom: 1px solid rgba(255, 255, 255, 20);
+    border-right: 1px solid rgba(255, 255, 255, 20);
+    
+    /* 微小圆角和舒适的内边距 */
+    border-radius: 4px;
+    padding: 20px; 
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>700</width>
+         <height>500</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/picture/3.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <zorder>label_4</zorder>
+      <zorder>label_2</zorder>
+      <zorder>pushButton</zorder>
+      <zorder>pushButton_2</zorder>
+      <zorder>label_timeCost</zorder>
+     </widget>
+     <widget class="QWidget" name="page_4">
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>70</y>
+         <width>341</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Microsoft YaHei</family>
+         <pointsize>-1</pointsize>
+         <fontweight>Black</fontweight>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    /* 核心底色：从左侧的血红色渐变到右侧的死寂黑 */
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(220, 20, 60, 80), stop:1 rgba(20, 20, 22, 220));
+    
+    /* 字体：冷酷的纯白 */
+    color: #FFFFFF;
+    font-family: &quot;Microsoft YaHei&quot;, &quot;Impact&quot;, sans-serif;
+    font-size: 22px; 
+    font-weight: 900; 
+    letter-spacing: 3px; 
+    
+    /* 边框：左侧变成粗壮的警报红边框 */
+    border-left: 6px solid #DC143C; /* 猩红色 */
+    border-top: 1px solid rgba(255, 255, 255, 15);
+    border-bottom: 1px solid rgba(255, 255, 255, 15);
+    border-right: 1px solid rgba(255, 255, 255, 15);
+    
+    border-radius: 4px;
+    padding: 20px; 
+}</string>
+       </property>
+       <property name="text">
+        <string>MISSION FAILED</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_9">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>260</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* ================= 常态（默认样子） ================= */
+QPushButton {
+    background-color: rgba(30, 32, 36, 180); /* 深色枪灰色，带一点透明度透出背景 */
+    color: #FFFFFF; /* 纯白字体 */
+    border: 2px solid rgba(255, 255, 255, 30); /* 极淡的白色边框，增加质感 */
+    border-radius: 4px; /* 微小的圆角，现代感更强 */
+    font-family: &quot;Microsoft YaHei&quot;, sans-serif; /* 干净的无衬线字体 */
+    font-size: 18px; /* 字体大小（根据你的实际按钮大小微调） */
+    font-weight: bold;
+    letter-spacing: 4px; /* 字间距拉宽，显得更高级 */
+}
+
+/* ================= 悬停态（鼠标放上去时） ================= */
+QPushButton:hover {
+    background-color: rgba(45, 48, 54, 220); /* 底色稍微变亮一点 */
+    color: #EAA112; /* 字体变成 CS2 标志性的亮黄色 */
+    border: 2px solid #EAA112; /* 边框亮起警戒黄 */
+}
+
+/* ================= 按下态（鼠标点击时） ================= */
+QPushButton:pressed {
+    background-color: #EAA112; /* 点击瞬间底色变成全黄 */
+    color: #000000; /* 字体变成黑色，形成强烈反差 */
+    border: 2px solid #EAA112;
+    padding-top: 2px; /* 模拟真实的向下按压物理位移 */
+    padding-left: 2px;
+}</string>
+       </property>
+       <property name="text">
+        <string>重新尝试</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>700</width>
+         <height>500</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/picture/3.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <zorder>label_6</zorder>
+      <zorder>label_5</zorder>
+      <zorder>pushButton_9</zorder>
+     </widget>
+     <widget class="QWidget" name="page_5">
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>700</width>
+         <height>500</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image:url(:/picture/2.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>30</y>
+         <width>181</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    /* 战术底板：深沉的枪灰色，带有较高的不透明度，确保文字清晰 */
+    background-color: rgba(25, 28, 33, 220);
+    
+    /* 字体：纯白，冷酷专业 */
+    color: #FFFFFF;
+    font-family: &quot;Microsoft YaHei&quot;, sans-serif;
+    font-size: 20px; 
+    font-weight: bold;
+    letter-spacing: 3px; /* 微微拉开字间距 */
+    
+    /* 核心灵魂：左侧的粗壮 CS2 警戒黄切线 */
+    border-left: 5px solid #EAA112;
+    
+    /* 底部加一条极细的暗线，增加装甲拼接的质感 */
+    border-bottom: 2px solid rgba(255, 255, 255, 15);
+    
+    /* 切角设计：右上和左下有微小的圆角，左上和右下直角，充满机械感 */
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    
+    /* 留出舒适的内边距 */
+    padding: 8px 20px; 
+}</string>
+       </property>
+       <property name="text">
+        <string>关卡模式</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>140</y>
+         <width>250</width>
+         <height>228</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="1" column="2">
+         <widget class="QPushButton" name="pushLevel_4">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>第四关</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QPushButton" name="pushLevel_1">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>第一关</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="pushLevel_5">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>第五关</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="2">
+         <widget class="QPushButton" name="pushLevel_10">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>第十关</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="pushLevel_3">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>第三关</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QPushButton" name="pushLevel_6">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>第六关</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QPushButton" name="pushLevel_7">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>第七关</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="pushLevel_2">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>第二关</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QPushButton" name="pushLevel_8">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>第八关</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QPushButton" name="pushLevel_9">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>第九关</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
